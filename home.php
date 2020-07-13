@@ -137,6 +137,7 @@ if(isset($_POST['name'])&&isset($_POST['email'])&&isset($_POST['gender'])&&isset
 		$sql ="INSERT INTO `registration`(`user_id`, `user_name`, `user_email`, `user_gender`, `user_password`) VALUES (NULL, '$_POST[name]', '$_POST[email]', '$_POST[gender]', '$_POST[pass]')";
 		mysqli_query($connection,$sql);
 					echo "<script>show_success();timer_on();</script>";
+					echo "github";
 	
 		}
 	}
